@@ -6,6 +6,7 @@ Let's say we want to write a web service to display List of items/ latops and we
 For example, we could expose this service as:
 
 http://127.0.0.1/latops/
+
 http://127.0.0.1/latops/<id>
 
 You can access this web service via -
