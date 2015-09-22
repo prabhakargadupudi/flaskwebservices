@@ -1,3 +1,13 @@
+# Author: Prabhakar Gadupudi
+# Creation Date: September 22,2015
+# Modified Date: September 22,2015
+# Pre requisites : Python >=2.7 and Flask v0.10.1 ( Tested this file on python 2.7 and Flask 0.10.1)
+# You can directly run this file through command line "python server.py" OR python IDLE
+# and you can access this service via browser http://127.0.0.1:5000/laptops as well as via browser webservice client
+# OR curl -i http://127.0.0.1:5000/laptops
+# For getting single value by passing id http://127.0.0.1:5000/laptops/3
+
+
 from flask import Flask, jsonify,abort,redirect,url_for
 app = Flask(__name__)
 
@@ -29,7 +39,7 @@ laptops = [
 ]
 
 @app.route('/laptops', methods=['GET','POST'])
-def get_laptops():
+def get_all_laptops():
     return jsonify({'laptops': laptops})
 
 @app.route('/laptops/<int:laptops_id>', methods=['GET','POST'])
