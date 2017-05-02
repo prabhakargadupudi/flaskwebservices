@@ -14,4 +14,4 @@ You can access this web service via -
 *. Browser
 *. Curl command - It is recommended to test the web service by using curl command
 *. Browser add-in - It is recommended to test the web service by using curl command
-
+*. Using any third party web service testing tools
