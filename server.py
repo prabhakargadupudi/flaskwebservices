@@ -45,6 +45,7 @@ def get_all_laptops():
 
 @app.route('/laptops/<int:laptops_id>', methods=['GET','POST'])
 def get_laptop_status(laptops_id):
+    print "Function has been called"
     laptops = [laptop for laptop in laptops if laptop['id'] == laptops_id]
     if len(laptops) == 0:
         abort(404)
