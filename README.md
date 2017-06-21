@@ -1,4 +1,4 @@
-Sample REST (REpresentational State Transfer) webservice 
+Sample REST (REpresentational State Transfer) webservice , how we can use it in python Flask
 
 In this example I'm going to show you how easy it is to create a RESTful web service using Python 2.7 and Flask 0.10.1 microframework.
 
